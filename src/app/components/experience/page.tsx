@@ -1,5 +1,6 @@
 import React from "react";
 import companyLogo from "@/assets/images/pilog-logo-trans-bg.png"
+import Image from "next/image";
 
 function Experence() {
   return (
@@ -17,7 +18,7 @@ function Experence() {
         <div className="relative ml-10 p-6">
             <div className="absolute top-[38%] left-[45%] h-[50px] w-[1px] bg-[var(--bodyColor)]"></div>
             <div className="border rounded-2xl p-4 bg-[var(--bodyBg)]">
-                <div><span> <img src={companyLogo.src}  alt="current logo" className="w-[80px]" /> </span></div>
+                <div><span> <Image src={companyLogo.src}  alt="current logo" className="w-[80px]" /> </span></div>
                 <div className="mt-2 flex align-middle justify-between"><span className="text-[var(--color-accent)]"> Frontend Developer</span><span> Nov-2022 - Present  <sup className="text-[var(--bodyColor)]"> Hyderabad </sup></span></div>
                 
             </div>

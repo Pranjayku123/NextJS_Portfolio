@@ -10,11 +10,11 @@ function Hero() {
       <div className="absolute inset-0 z-10 flex items-center justify-center">
     <div className="w-[60%] text-center">
       <h4 className="text-white font-bold text-4xl mb-4">
-        Hey there! I'm Pranjay 👋
+        Hey there! I am Pranjay 👋
       </h4>
       <p className="text-teal-50 font-bold text-xl mb-6">
         A passionate Software Developer with 2+ years of experience building
-        clean, responsive, and interactive web interfaces. Let's build
+        clean, responsive, and interactive web interfaces. Let s build
         something amazing together.
       </p>
       <div className="flex justify-center gap-4">

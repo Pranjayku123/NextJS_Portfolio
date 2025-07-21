@@ -6,8 +6,8 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
+import Image from "next/image";
 import projectOneImg from "@/assets/images/ProjectOne.png";
 import projectTwoImg from "@/assets/images/ProjectTwo.png";
 import ProjectThreeImg from "@/assets/images/ProjectThree.png";
@@ -72,7 +72,7 @@ function Projects() {
             className="relative bg-[var(--bgColor)] shadow-lg rounded-lg text-center p-4 transition-transform duration-300 hover:scale-105"
           >
             <div className="w-full flex justify-center h-[150px] sm:h-[180px]">
-              <img src={project.image} alt={project.title} className="w-full h-full object-contain rounded-md" />
+              <Image src={project.image} alt={project.title} className="w-full h-full object-contain rounded-md" />
             </div>
             <h4 className="text-lg sm:text-xl font-bold text-[var(--colorPrimary)] mt-4">
               {project.title}
@@ -94,7 +94,7 @@ function Projects() {
           </DialogHeader>
           {selectedProject && (
             <div className="flex flex-col gap-4">
-              <img
+              <Image
                 src={selectedProject.image}
                 alt={selectedProject.title}
                 className="w-full max-h-[200px] sm:max-h-[250px] md:max-h-[300px] object-contain rounded-md"

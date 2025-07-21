@@ -1,8 +1,9 @@
 import React from "react";
 import ProfileImg from "@/assets/images/PRK.webp";
-interface ProfileProps {
-  ProfileImg: string;
-}
+// interface ProfileProps {
+//   ProfileImg: string;
+// }
+import Image from "next/image";
 function About() {
   return (
     <div className="font-shantell relative w-full flex flex-col justify-center gap-4 bg-[var(--bodyBg)] text-teal-50 mx-auto size-[600px]">
@@ -51,7 +52,7 @@ function About() {
     after:w-[15px] 
     after:bg-[var(--colorPrimary)]"
           >
-            <img
+            <Image
               src={ProfileImg.src}       
               alt="Pranjay Kumar"
               className="object-cover"
